@@ -11,8 +11,8 @@ function App() {
     <div style={{ padding: "1rem" }}>
       {!showExercise ? (
         <div>
-          <h1>VitalMove</h1>
-          <h2>Rutinas accesibles y guiadas</h2>
+          <h1>Bienvenido a VitalMove</h1>
+          <h2>Entrena con rutinas adaptadas</h2>
           <button onClick={() => setShowExercise(true)}>Entrar a Jumping Jacks</button>
         </div>
       ) : (
@@ -25,12 +25,12 @@ function App() {
             {showAnimation ? "Ocultar Movimiento" : "▶ Ver Movimiento"}
           </button>
 
-          {showAnimation && <img src={jumpingGif} alt="Animación Jumping Jacks" />}
+          {showAnimation && <img src={jumpingGif} alt="Jumping Jacks Animation" />}
 
           <audio className="audio-control" controls src={audioGuide}></audio>
 
           <div className="subtitle">
-            <p><strong>Subtítulos:</strong> Abre y cierra piernas y brazos al mismo tiempo. Mantén el ritmo. Respira. Repite durante 1 minuto.</p>
+            <p><strong>Subtítulos:</strong> Abre y cierra brazos y piernas al mismo tiempo. Mantén el ritmo. Respira. Repite durante 1 minuto.</p>
           </div>
 
           <div style={{ textAlign: "left", margin: "1rem auto", maxWidth: "500px" }}>
@@ -42,7 +42,7 @@ function App() {
             </ul>
           </div>
 
-          <button onClick={() => setShowExercise(false)}>← Volver al inicio</button>
+          <button onClick={() => setShowExercise(false)}>⏪ Volver al inicio</button>
         </div>
       )}
     </div>
